@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
 
-public class MoveController : MonoBehaviour
+public class MoveControllerView : MonoBehaviour
 {
     private const float delay = 1.2f;
 
