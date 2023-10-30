@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e21abaa08ac65b4b97ac1d020d3bf5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbody: {fileID: 345347337}
   speed: 7
   force: 8
   isInJump: 0
@@ -173,7 +174,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_LocalScale.x
@@ -223,8 +224,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5744131450151003086, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
+--- !u!1001 &575187448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100338, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_Name
+      value: unitychan_dynamic
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +488,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_LocalScale.x
@@ -441,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.63
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_LocalPosition.z
@@ -479,7 +538,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5744131450151003086, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
 --- !u!1001 &2045613691
 PrefabInstance:
@@ -490,7 +550,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_LocalScale.x
@@ -540,7 +600,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5744131450151003086, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
 --- !u!1001 &5744131451036646335
 PrefabInstance:
@@ -551,7 +612,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5744131450151003087, guid: c1a41ad6d706285419f68f6579734ead, type: 3}
       propertyPath: m_LocalPosition.x
@@ -624,7 +685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7202034559520578605, guid: f8e5b8b9dcc512d45ac88d5319622ce8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7202034559520578605, guid: f8e5b8b9dcc512d45ac88d5319622ce8, type: 3}
       propertyPath: m_AnchorMax.x
