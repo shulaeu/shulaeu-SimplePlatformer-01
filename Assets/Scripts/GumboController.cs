@@ -5,17 +5,22 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
-using System.Random;
+//using static UnityEngine.Random;
+//using static System.Random;
+//using UnityEngine.Random;
+//using System.Random;
 using System.ComponentModel.Design.Serialization;
+using Random = UnityEngine.Random;
 
 public class GumboController : MonoBehaviour
 {
     [SerializeField] private float speed = 0.1f;
     [SerializeField] private float movement = 0.1f;
-    [SerializeField] private float i = transform.position.z;
+    //[SerializeField] private float i = transform.position.z;
     //i = GetComponent<transform.position.z>;
     
     public Transform[] movePoints;
+    //public Vector3[] movePoints;
     private int randomPoint;
     private float waitTime;
     public float startWaitTime;
@@ -41,7 +46,7 @@ public class GumboController : MonoBehaviour
             }
             else
             {
-                waitTime -= Timeout.deltaTime;
+                waitTime -= Time.deltaTime;
             }
         }
 
@@ -71,9 +76,5 @@ public class GumboController : MonoBehaviour
         //{
         //    transform.position += new Vector3(0, 0, -movement) * speed * Time.deltaTime;
         //}
-        
-        
-
-
     }
 }

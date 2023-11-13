@@ -46,14 +46,14 @@ public class MoveControllerView : MonoBehaviour
 
             if (x > 0)
             {
-                if(root.transform.rotation.y<rotateAngle)
+                if(root.transform.rotation.y < rotateAngle)
                 {
                     root.transform.RotateAround(root.transform.position, Vector3.up, rotateForce * Time.deltaTime);
                 }
             }
             else if(x<0)
             {
-                if (root.transform.rotation.y < rotateAngle)
+                if (root.transform.rotation.y > -rotateAngle)
                 {
                     root.transform.RotateAround(root.transform.position, Vector3.up, -rotateForce * Time.deltaTime);
                 }
@@ -66,10 +66,10 @@ public class MoveControllerView : MonoBehaviour
             isInJump = true;
             anim.SetBool("Jump", true);
         }
-        else
-        {
-            anim.SetFloat(Speed,0);
-        }
+        //else
+        //{
+        //    anim.SetFloat(Speed,0);
+        //}
     }
 
     private void OnCollisionEnter(Collision other)
