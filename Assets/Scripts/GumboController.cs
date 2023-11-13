@@ -5,7 +5,8 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
-using Unity.System.Random;
+using System.Random;
+using System.ComponentModel.Design.Serialization;
 
 public class GumboController : MonoBehaviour
 {
