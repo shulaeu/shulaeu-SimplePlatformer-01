@@ -7375,6 +7375,7 @@ MonoBehaviour:
   root: {fileID: 8426529327554495320}
   speed: 7
   force: 80
+  rotateForce: 200
   isInJump: 0
 --- !u!1 &5540272199339382696
 GameObject:
@@ -8733,7 +8734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5540272200190675635}
   m_LocalRotation: {x: 0.08182758, y: -0.27251297, z: 0.051392823, w: 0.9572877}
-  m_LocalPosition: {x: 1.03, y: 2, z: 0}
+  m_LocalPosition: {x: 1.85, y: 1.63, z: -1.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

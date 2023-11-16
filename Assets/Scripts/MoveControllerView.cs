@@ -3,17 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel.Design.Serialization;
-//using System.Diagnostics.Eventing.Reader;
 using UnityEngine;
 
 public class MoveControllerView : MonoBehaviour
 {
-    //private const float delay = 1.2f;
     private const float rotateAngle = 0.7f;
 
     [SerializeField] private GameObject root;
 
-    //[SerializeField] private Rigidbody rigidbody;
     [SerializeField] private float speed = 7f;
     [SerializeField] private float force = 8f;
     [SerializeField] private float rotateForce = 200f;
@@ -35,7 +32,6 @@ public class MoveControllerView : MonoBehaviour
     private void Update()
     {
         float x = Input.GetAxis("Horizontal");
-        //Rigidbody rigidbody = GetComponent<Rigidbody>();
 
         if (Mathf.Abs(x) > 0.01f)
         {
@@ -66,10 +62,6 @@ public class MoveControllerView : MonoBehaviour
             isInJump = true;
             anim.SetBool("Jump", true);
         }
-        //else
-        //{
-        //    anim.SetFloat(Speed,0);
-        //}
     }
 
     private void OnCollisionEnter(Collision other)

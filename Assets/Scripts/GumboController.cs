@@ -29,7 +29,7 @@ public class GumboController : MonoBehaviour
 
     private void Start()
     {
-        randomPoint = Random.Range(0, movePoints.Length);
+        //randomPoint = Random.Range(0, movePoints.Length);
         waitTime = startWaitTime;
     }
 
@@ -49,32 +49,5 @@ public class GumboController : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
-
-        //if (transform.position.z < 5.0f && transform.position.z >= 0f)
-        //{
-        //    transform.position += new Vector3(0,0,movement) * speed * Time.deltaTime;
-        //}
-        //else if (transform.position.z > -5.5f)
-        //{
-        //    transform.position += new Vector3(0,0,-movement) * speed * Time.deltaTime;
-        //}
-
-        //for (transform.position.z = 0f; transform.position.z <5.0f; transform.position += new Vector3(0, 0, movement) * speed * Time.deltaTime)
-        //{
-        //    //transform.position += new Vector3(0, 0, movement) * speed * Time.deltaTime;
-        //}
-        //for (transform.position.z = 5.0f; transform.position.z > -5.5f; transform.position += new Vector3(0, 0, -movement) * speed * Time.deltaTime)
-        //{
-        //    //transform.position += new Vector3(0, 0, movement) * speed * Time.deltaTime;
-        //}
-        
-        //for (i = 0; i < 5.0f; i++)
-        //{
-        //    transform.position += new Vector3(0, 0, movement) * speed * Time.deltaTime;
-        //}
-        //for (i = 0; i < 5.0f; i--)
-        //{
-        //    transform.position += new Vector3(0, 0, -movement) * speed * Time.deltaTime;
-        //}
     }
 }
